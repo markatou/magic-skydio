@@ -1,0 +1,8 @@
+prefix=/home/emplisi/catkin_ws/devel
+
+Name: skydio_pose
+Description: Description of skydio_pose
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/emplisi/catkin_ws/devel/lib 
+Requires: 
