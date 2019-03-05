@@ -1,0 +1,8 @@
+{
+  "com_link.ComLink": {
+    "display_name": "ComLink",
+    "explanation": "",
+    "hint": "Send messages over HTTP",
+    "short_name": "ComLink"
+  }
+}

@@ -21,6 +21,8 @@ import json
 import time
 import rospy
 from std_msgs.msg import String
+from std_msgs.msg import Float32
+from geometry_msgs.msg import Pose
 from http_client import HTTPClient
 
 
@@ -65,7 +67,8 @@ def main():
     if args.forward:
         request['forward'] = args.forward
 
-    pub = rospy.Publisher('pose', String, queue_size=10)
+    pose_pub = rospy.Publisher('pose', Pose, queue_size=10)
+    speed_pub = rospy.Publisher('speed', Float32, queue_size=1)
     rospy.init_node('skydio_talker', anonymous=True)
     rate = rospy.Rate(10) # 10hz
 
@@ -75,14 +78,28 @@ def main():
         elapsed_time = int(time.time() - start_time)
         request['detail'] = elapsed_time
 
-        # Arbitrary data format. Using JSON here.
+        # transport_client output, arbitrary data format. Using JSON here.
         t = time.time()
-        response = client.send_custom_comms(args.skill_key, json.dumps(request))
+        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) #comes in the form [[x, y, z], speed]
         dt = int((time.time() - t) * 1000)
-        resp = 'Custom Comms Response (took {}ms) {}\n'.format(dt, json.dumps(response, sort_keys=True, indent=True))
+        resp = 'JSON response (took {}ms) {}\n'.format(dt, json.dumps(response, sort_keys=True, indent=True))
         print(resp)
-        rospy.loginfo(resp)
-        pub.publish(resp)
+
+        # Publish data on ROS topics
+        posemsg = Pose()
+        posemsg.position.x = response[0][0]
+        posemsg.position.y = response[0][1]
+        posemsg.position.z = response[0][2]
+
+        speedmsg = Float32()
+        speedmsg.data = response[1]
+
+        print("--ROSLOG--")
+        rospy.loginfo(posemsg)
+        rospy.loginfo(speedmsg)
+
+        pose_pub.publish(posemsg)
+        speed_pub.publish(speedmsg)
         rate.sleep()
 
         if args.image:

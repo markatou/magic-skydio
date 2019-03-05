@@ -17,6 +17,7 @@ import os
 import sys
 import threading
 import time
+import rpc_parse 
 
 try:
     # python 2
@@ -185,7 +186,6 @@ class HTTPClient(object):
         Returns:
             dict: a dict with metadata for the response and a 'data' field, encoded by the Skill.
         """
-
         rpc_request = {
             'data': base64.b64encode(data),
             'skill_key': skill_key,
@@ -202,7 +202,44 @@ class HTTPClient(object):
         # Parse and return the rpc.
         if rpc_response:
             if 'data' in rpc_response:
+                rpc_response['data'] = base64.b64decode(rpc_response['data'])     
+        return rpc_response
+
+    def send_custom_comms_receive_parsed(self, skill_key, data, no_response=False):
+        """
+        Send custom bytes to the vehicle and return a parsed response
+
+        Args:
+            skill_key (str): The identifer for the Skill you want to receive this message.
+            data (bytes): The payload to send.
+            no_response (bool): Set this to True if you don't want a response.
+
+        Returns:
+            dict: a dict with metadata for the response and a 'data' field, encoded by the Skill.
+        """
+        rpc_request = {
+            'data': base64.b64encode(data),
+            'skill_key': skill_key,
+            'no_response': no_response,  # this key is option and defaults to False
+        }
+
+        # Post rpc to the server as json.
+        try:
+            rpc_response = self.request_json('custom_comms', rpc_request)
+        except Exception as error:  # pylint: disable=broad-except
+            fmt_err('Comms Error: {}\n', error)
+            return None
+
+        position = None
+        # Parse and return the rpc.
+        if rpc_response:
+            if 'data' in rpc_response:
                 rpc_response['data'] = base64.b64decode(rpc_response['data'])
+                position = rpc_parse.get_position_from_rpc(rpc_response['data'])
+                speed = rpc_parse.get_speed_from_rpc(rpc_response['data'])
+        if position and speed:
+            return [position, speed]
+            
         return rpc_response
 
     def update_pilot_status(self):
