@@ -43,6 +43,9 @@ class ComLink(Skill):
         speed = api.vehicle.get_speed()
         if speed is not None:
             response['speed'] = speed
+        quaternion = api.vehicle.get_orientation().quaternion()
+        if quaternion is not None:
+            response['orientation'] = quaternion.tolist()
 
         # Button status
         if self.pressed:
