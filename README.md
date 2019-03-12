@@ -15,13 +15,19 @@ Instructions:
 1. Upload "magic-skydio/skydio-skills/com" to Skydio SDK. (Instructions: https://console.skydio.com/docs/skills/getting_started.html ) 
 2. Open Webpage (magic-skydio/web/webpage.html) to a browser of your choice. We tried it on Chrome. 
 3. On a command line: 
+
     i. roscore
+    
     ii. roslaunch rosbridge_server rosbridge_websocket.launch
+    
 4. In a new command window, run the "magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py" 
 
     Arguments: 
-    - `--skill-key` equal to the key of the ComLink skill which is `[your_skillset_name].com_link.ComLink`
+    
+    --skill-key equal to the key of the ComLink skill which is `[your_skillset_name].com_link.ComLink`
+    
     --forward X Tells the Skydio to move X forward
+    
     --loop 
      
     If you use a simulator: 
