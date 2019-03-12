@@ -1,2 +1,0 @@
-skydio_pose
--DCATKIN_DEVEL_PREFIX=/home/emplisi/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/emplisi/catkin_ws/install -G Unix Makefiles
