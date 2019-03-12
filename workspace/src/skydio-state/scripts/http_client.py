@@ -17,7 +17,7 @@ import os
 import sys
 import threading
 import time
-import rpc_parse 
+import yaml
 
 try:
     # python 2
@@ -235,10 +235,15 @@ class HTTPClient(object):
         if rpc_response:
             if 'data' in rpc_response:
                 rpc_response['data'] = base64.b64decode(rpc_response['data'])
-                position = rpc_parse.get_position_from_rpc(rpc_response['data'])
-                speed = rpc_parse.get_speed_from_rpc(rpc_response['data'])
-        if position and speed:
-            return [position, speed]
+                
+                # Using YAML parser to convert rpc response for ROS messages
+                stream = yaml.load(rpc_response['data'])
+                position = stream['position']
+                orientation = stream['orientation']
+                speed = stream['speed']
+
+        if position and orientation and speed:
+             return [position, orientation, speed]
             
         return rpc_response
 

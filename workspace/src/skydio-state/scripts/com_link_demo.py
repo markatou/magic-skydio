@@ -80,7 +80,7 @@ def main():
 
         # transport_client output, arbitrary data format. Using JSON here.
         t = time.time()
-        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) #comes in the form [[x, y, z], speed]
+        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) #comes in the form [[position], [orientation], speed]
         dt = int((time.time() - t) * 1000)
         resp = 'JSON response (took {}ms) {}\n'.format(dt, json.dumps(response, sort_keys=True, indent=True))
         print(resp)
@@ -90,9 +90,13 @@ def main():
         posemsg.position.x = response[0][0]
         posemsg.position.y = response[0][1]
         posemsg.position.z = response[0][2]
+        posemsg.orientation.x = response[1][0]
+        posemsg.orientation.y = response[1][1]
+        posemsg.orientation.z = response[1][2]
+        posemsg.orientation.w = response[1][3]
 
         speedmsg = Float32()
-        speedmsg.data = response[1]
+        speedmsg.data = response[2]
 
         print("--ROSLOG--")
         rospy.loginfo(posemsg)
