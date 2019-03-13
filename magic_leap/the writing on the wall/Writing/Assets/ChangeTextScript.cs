@@ -72,6 +72,7 @@ public class ChangeTextScript : MonoBehaviour
                         // Convert byte array to string message.                        
                         string serverMessage = Encoding.ASCII.GetString(incommingData);
                         Debug.Log("server message received as: " + serverMessage);
+                        SendMessage();
                     }
                 }
             }
