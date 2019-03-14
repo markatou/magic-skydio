@@ -14,6 +14,8 @@ public class ChangeTextScript : MonoBehaviour
     private TcpClient socketConnection;
     private Thread clientReceiveThread;
     public TextMesh textObject;
+    public String msg;
+    public String old_msg;
 
     #endregion
     // Use this for initialization  
@@ -21,15 +23,19 @@ public class ChangeTextScript : MonoBehaviour
     {
         textObject = GameObject.Find("text").GetComponent<TextMesh>();
         textObject.text = "test";
+        old_msg = "test";
+        msg = "test";
 
         ConnectToTcpServer();
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (msg != old_msg)
         {
-            SendMessage();
+            old_msg = msg;
+            Debug.Log("In fixed update");
+            textObject.text = msg;
         }
     }
 
@@ -72,6 +78,7 @@ public class ChangeTextScript : MonoBehaviour
                         // Convert byte array to string message.                        
                         string serverMessage = Encoding.ASCII.GetString(incommingData);
                         Debug.Log("server message received as: " + serverMessage);
+                        msg = serverMessage;
                         SendMessage();
                     }
                 }
