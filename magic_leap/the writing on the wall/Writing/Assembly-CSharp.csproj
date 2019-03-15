@@ -60,7 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ChangeTextScript.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Communication.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Communicators.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Message.cs" />
@@ -102,6 +101,7 @@
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\MeshTriangle.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\Plane.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\SolidPrimitive.cs" />
+    <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Float32.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Header.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\String.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Time.cs" />
@@ -123,6 +123,7 @@
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransfer.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransferFromRos.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransferToRos.cs" />
+    <Compile Include="Assets\RosSharp\Scripts\ChangeTextScript.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Extensions\StandardHeaderExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStatePatcher.cs" />
@@ -191,16 +192,16 @@
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisual.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisuals.cs" />
     <Reference Include="Unity.XR.MagicLeap.Editor">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.MagicLeap">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/PlaybackEngines/lumin/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -391,11 +392,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Urdf">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/H2R/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
@@ -405,9 +409,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/H2R/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
