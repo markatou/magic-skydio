@@ -3,7 +3,6 @@ from __future__ import absolute_import
 from __future__ import print_function
 import json
 import numpy as np
-import vehicle.skills.util.motions
 
 from vehicle.skills.skills import Skill
 from vehicle.skills.util.ui import UiButton
@@ -13,10 +12,8 @@ from vehicle.skills.util.transform import Transform
 
 class ComLink(Skill):
     """ Communicate with a client device over HTTP.
-
     This skill displays basic information on the phone, but also
     sends and receives data from an external python script.
-
     See skydio_client.py
     """
 
@@ -24,8 +21,7 @@ class ComLink(Skill):
         super(ComLink, self).__init__()
         self.data = {}
         self.pressed = False
-        self.motion = []
-        self.motion_index = 0
+        self.motion = None
 
     def handle_rpc(self, api, message):
         """ A client send custom message to this Skill. """
@@ -65,15 +61,19 @@ class ComLink(Skill):
             speed = self.data.get('speed', 2.0)
 
             # Create Motion object that will manage vehicle position updates over time.
-            self.motion.append(GotoMotion(nav_T_goal, params=dict(speed=speed)))
+            self.motion = GotoMotion(nav_T_goal, params=dict(speed=speed))
+        
+        if 'up' in self.data:
+            nav_T_cam = api.vehicle.get_camera_trans()
+            cam_t_point = np.array([0, 0, self.data['up']])
+            nav_t_point = nav_T_cam * cam_t_point
+            nav_T_goal = Transform(nav_T_cam.rotation(), nav_t_point)
 
-        if 'right' in self.data:
-            curr_pos = api.vehicle.get_position()
-            transform = np.array([0, self.data['right'], 0])
-            goal_pos = curr_pos + transform
+            # Get optional speed parameter.
+            speed = self.data.get('speed', 2.0)
 
-            self.motion = []
-            self.motion.append(move_towarwds_goal(goal_pos))
+            # Create Motion object that will manage vehicle position updates over time.
+            self.motion = GotoMotion(nav_T_goal, params=dict(speed=speed))
 
         # Update the layout every time we get a request.
         self.set_needs_layout()
@@ -81,14 +81,11 @@ class ComLink(Skill):
         # Serialization format is arbitrary. Here we send json.
         return json.dumps(response)
 
-        # ####Instead of returning the entire response, we return just the position vector####
-        # return json.dumps(response['position']) 
-
     def button_pressed(self, api, button_id):
         """ The user pressed a button in the Skydio app. """
         # Pressing the STOP button should cancel the motion.
         if button_id == 'stop':
-            self.motion = []
+            self.motion = None
         elif button_id == 'send':
             # Record for later
             self.pressed = True
@@ -100,7 +97,7 @@ class ComLink(Skill):
         controls = {}
         if self.motion:
             controls['show_stop'] = True
-            controls['height_slider_enabled'] = False
+            controls['height_slider_enabled'] = True #DEBUG: Want height slider when com_link is going
         else:
             controls['show_stop'] = False
             controls['height_slider_enabled'] = True
@@ -117,19 +114,19 @@ class ComLink(Skill):
     def update(self, api):
         """ Control the vehicle. """
         # If we're executing a motion, disable phone commands and update the motion
-        if self.motion and self.motion_index < len(self.motion):
+        if self.motion:
             api.phone.disable_movement_commands()
-            self.motion[self.motion_index].update(api) #looping through self.motion_index via a while loop is what makes the simulator reset
+            self.motion.update(api)
 
-
+            
             api.planner.settings.obstacle_safety = 1.0
             api.movement.set_max_speed(10.0)
 
             # When the motion completes, clear it and update the UI.
-            if self.motion[self.motion_index].done:
-                print("motion complete") #how do we loop through a series of motions without a while loop?
+            if self.motion.done:
+                print("motion complete")
+                self.motion = None
                 self.set_needs_layout()
-                self.motion_index += 1
         else:
             # Otherwise, just listen to the phone.
             api.phone.enable_movement_commands()
