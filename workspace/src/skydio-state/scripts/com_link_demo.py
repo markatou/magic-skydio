@@ -22,11 +22,24 @@ import time
 import rospy
 from std_msgs.msg import String
 from std_msgs.msg import Float32
+from std_msgs.msg import Int64
 from geometry_msgs.msg import Pose
 from http_client import HTTPClient
 
+# TODO: Make this better
+global moveForwardVal 
+moveForwardVal = 0
+
+def ml_callback(msg):
+    global moveForwardVal
+    print("going to callback")
+    print("msg data:")
+    print(msg.data)
+    moveForwardVal = msg.data
+
 
 def main():
+    global moveForwardVal
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--baseurl', metavar='URL', default='http://192.168.10.1',
                         help='the url of the vehicle')
@@ -42,6 +55,10 @@ def main():
     # Example actions for the ComLink skill
     parser.add_argument('--forward', metavar='X', type=float,
                         help='move forward X meters.')
+
+    # Example of moving up
+    parser.add_argument('--up', metavar='X', type=float,
+                    help='move forward X meters.')
 
     parser.add_argument('--loop', action='store_true',
                         help='keep sending messages')
@@ -64,17 +81,24 @@ def main():
         'title': 'Hello World',
         'detail': 0,
     }
-    if args.forward:
-        request['forward'] = args.forward
 
     pose_pub = rospy.Publisher('pose', Pose, queue_size=10)
     speed_pub = rospy.Publisher('speed', Float32, queue_size=1)
     rospy.init_node('skydio_talker', anonymous=True)
+
+    # Listen to Magic Leap
+    rospy.Subscriber('go_forward', Int64, ml_callback)
+    
+        
     rate = rospy.Rate(10) # 10hz
 
     # Continuously poll
     start_time = time.time()
     while not rospy.is_shutdown():
+        if moveForwardVal != 0:
+            print("going to part 2")
+            request['forward'] = moveForwardVal
+
         elapsed_time = int(time.time() - start_time)
         request['detail'] = elapsed_time
 
@@ -115,6 +139,7 @@ def main():
 
             # Don't repeat the forward command.
             if 'forward' in request:
+                moveForwardVal = 0
                 del request['forward']
 
         else:
