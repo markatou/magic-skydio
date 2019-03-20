@@ -1,0 +1,18 @@
+{
+    "name": "UnityMagicLeap",
+    "version": "1.0.0",
+    "libraryName": "UnityMagicLeap",
+    "cameras": [
+    {
+        "id": "MagicLeap-Camera",
+        "providesAverageBrightness": false,
+        "providesAverageColorTemp": false,
+        "providesProjectionMatrix": false,
+        "providesDisplayMatrix": false,
+        "providesTimestamp": false
+    }],
+    "meshings": [
+        {
+            "id": "MagicLeap-Mesh"
+        }]
+}
