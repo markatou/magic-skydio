@@ -60,10 +60,85 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Compile Include="Assets\ChangeTextScript.cs" />
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
+    <Compile Include="Assets\MagicLeap\CoreComponents\BaseRaycast.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\BitMask.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\ComboRaycastController.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\ComboRaycastEyes.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\ComboRaycastHead.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\ControllerConnectionHandler.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\HandTracking.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\HeadposeCanvas.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\MagicLeapSceneOptimizer.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\MLPersistentBehavior.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\MLPersistentPoint.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\Placement.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\Planes.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\PrivilegeRequester.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\Vignette\Vignette.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\WorldRaycastController.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\WorldRaycastEyes.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\WorldRaycastHead.cs" />
+    <Compile Include="Assets\MagicLeap\CoreComponents\WorldScale.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\AudioCaptureExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\DestroyAfterTime.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\FaceCamera.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\FaceTargetPosition.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\PathAroundObject.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\PlacementObject.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Common\TransformFollower.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ControllerFeedbackExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\HandTrackingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageCaptureExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\ImageTrackingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\LightTrackingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MediaPlayerExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MeshingExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MobileAppExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\MusicServiceExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\PersistenceExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\PlacementExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\PlanesExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\RaycastExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatsText.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusIndicator.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerStatusText.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\ControllerTransform.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayerButton.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayerSlider.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\MediaPlayerToggle.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PlaceFromCamera.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\PrivilegeDeniedError.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Utility\VirtualPointer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\VideoCaptureExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\VignetteExample.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ContentBindingVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ContentDragController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ContentDragHandler.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ControllerVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSeaExplorerLauncher.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSpaceExplorerController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\DeepSpaceExplorerLauncher.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\HandTrackingVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ImageCaptureVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\ImageTrackingVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\KeyPoseVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MasterMaterialController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MaterialBlendOffsetController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MaterialController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MaterialForegroundColorController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MaterialThresholdController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MaterialTilingController.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\MeshingVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFStatusText.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PCFVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PersistentBall.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PlacementVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\PlaneVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\RaycastVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\Visualizers\VideoCaptureVisualizer.cs" />
+    <Compile Include="Assets\MagicLeap\Examples\Scripts\WorldScaleExample.cs" />
+    <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
+    <Compile Include="Assets\MyCube.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Communication.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Communicators.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Message.cs" />
@@ -105,11 +180,9 @@
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\MeshTriangle.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\Plane.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Shape\SolidPrimitive.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Float32.cs" />
-=======
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Header.cs" />
+    <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Int64.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\String.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Standard\Time.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\Messages\Trajectory\JointTrajectory.cs" />
@@ -130,10 +203,7 @@
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransfer.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransferFromRos.cs" />
     <Compile Include="Assets\RosSharp\Extern\RosBridgeClient\UrdfTransfer\UrdfTransferToRos.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\RosSharp\Scripts\ChangeTextScript.cs" />
-=======
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     <Compile Include="Assets\RosSharp\Scripts\Extensions\StandardHeaderExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Extensions\TransformExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\MessageHandling\JointStatePatcher.cs" />
@@ -201,8 +271,39 @@
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfRobot.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisual.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\UrdfComponents\UrdfVisuals.cs" />
+    <None Include="Assets\MagicLeap\BackgroundMusicExample\readme.txt" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\PointCloud.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\MusicService.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\WorldScale.txt" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\WorldVerticalWithFilter.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\MobileApp.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Planes.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Placement.txt" />
+    <None Include="Assets\MagicLeap\CoreComponents\Vignette\Vignette.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Meshing.txt" />
+    <None Include="Assets\MagicLeap\Examples\Plugins\Lumin\manifest.xml" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\UnlitColorTransparent.shader" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\BasicWorldSpace.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Vignette.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Controller.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\HandTracking.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\VideoCapture.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Persistence.txt" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\WorldXZWithColor.shader" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\MeshWorldSpace.shader" />
+    <None Include="Assets\MagicLeap\BackgroundMusicExample\music_manifest.xml" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\WorldXZWithLerp.shader" />
+    <None Include="Assets\MagicLeap\Libs\LuminUnity.xml" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\ImageCapture.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\Raycast.txt" />
+    <None Include="Assets\MagicLeap\Examples\Shaders\PlaneEdge.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\MediaPlayer.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\AudioCapture.txt" />
+    <None Include="Assets\MagicLeap\Soundfield\Release Notes.txt" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\LightTracking.txt" />
+    <None Include="Assets\MagicLeap\Examples\Models\Controller\Shaders\ControllerDepthMask.shader" />
+    <None Include="Assets\MagicLeap\Examples\Documentation\ImageTracking.txt" />
     <Reference Include="Unity.XR.MagicLeap.Editor">
-<<<<<<< HEAD
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
@@ -213,18 +314,6 @@
     </Reference>
     <Reference Include="Unity.XR.MagicLeap">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
-=======
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.MagicLeap">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/PlaybackEngines/lumin/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -415,7 +504,12 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
+    <Reference Include="LuminUnity">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="MSA.Runtime">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -424,13 +518,6 @@
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
-=======
-    <Reference Include="Urdf">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/H2R/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
@@ -441,12 +528,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/H2R/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-=======
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
-    </Reference>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>

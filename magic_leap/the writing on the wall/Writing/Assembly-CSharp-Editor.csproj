@@ -60,6 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MagicLeap\CoreComponents\Editor\MLImageTrackerBehaviorEditor.cs" />
+    <Compile Include="Assets\MagicLeap\Scripts\Editor\BuildMabuWindow.cs" />
+    <Compile Include="Assets\MagicLeap\Scripts\Editor\MLVersionMenuItem.cs" />
+    <Compile Include="Assets\MagicLeap\Scripts\Editor\MusicExampleBuilder.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\Editor\JointStatePatcherEditor.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\Editor\TransferFromRosEditorWindow.cs" />
     <Compile Include="Assets\RosSharp\Scripts\RosBridgeClient\Editor\TransferFromRosHandler.cs" />
@@ -100,8 +104,8 @@
     <Compile Include="Assets\RosSharp\Scripts\Urdf\Editor\UrdfComponents\UrdfRobotExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\Editor\UrdfComponents\UrdfVisualExtensions.cs" />
     <Compile Include="Assets\RosSharp\Scripts\Urdf\Editor\UrdfComponents\UrdfVisualsExtensions.cs" />
+    <None Include="Assets\MagicLeap\Libs\Editor\LuminUnityEditor.xml" />
     <Reference Include="Unity.XR.MagicLeap.Editor">
-<<<<<<< HEAD
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
@@ -112,18 +116,6 @@
     </Reference>
     <Reference Include="Unity.XR.MagicLeap">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
-=======
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.MagicLeap">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Library/ScriptAssemblies/Unity.XR.MagicLeap.dll</HintPath>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/PlaybackEngines/lumin/Tools/UnityEngine.AIModule.dll</HintPath>
@@ -359,7 +351,18 @@
     <Reference Include="UnityEditor.Lumin.Extensions">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/PlaybackEngines/lumin/UnityEditor.Lumin.Extensions.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
+    <Reference Include="LuminUnity">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="LuminUnityEditor">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Libs/Editor/LuminUnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MSA.Runtime">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MSA.Editor">
+      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeap/Soundfield/Editor/MSA.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -368,13 +371,6 @@
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
-=======
-    <Reference Include="Urdf">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/Urdf.dll</HintPath>
-    </Reference>
-    <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/RosSharp/Plugins/websocket-sharp.dll</HintPath>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/H2R/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -397,12 +393,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-=======
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/H2R/Documents/magic-skydio/magic-skydio-master/magic-skydio-master/magic_leap/the writing on the wall/Writing/Assets/MagicLeapJson/Newtonsoft.Json.dll</HintPath>
-    </Reference>
->>>>>>> 3ec70a00b8814be2a1dc55cfa1a5de4330dde6d1
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity 2018.1.9f2-MLTP10/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>

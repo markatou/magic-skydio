@@ -661,7 +661,8 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: 
+    m_CertPath: C:/Users/H2R/Documents/magic-skydio/magic-skydio/magic_leap/the writing
+      on the wall/Writing/magicskydio.cert
     m_PrivateKeyPath: 
   luminIsChannelApp: 0
   luminVersion:
