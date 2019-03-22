@@ -1,14 +1,26 @@
-# Magic-Skydio
+# ROS-Enabled Skydio
+
+## Introduction
+
+This project ROS-enables the Skydio R1 drone. We provide a method to access R1's pose, orientation and speed and include an example of publishing this information over ROSBridge. Lastly, we include a basic listener and example webpage for subscibing to the topics. 
 
 
-This repo enables users using Skydio R1 and a base station computer to acquire R1's state through an HTTP connection, port the state to ROS, publish it as two topics (pose, speed), and then subscribe to them through a Webpage using ROSBridge. 
-
+## Dependencies
 
 Use of this repo requires:  
-1. Access to a base station that runs ROS melodic on Ubuntu 18.04, and rosbridge. 
-2. A Skydio R1 drone.
-3. A cellular device that can connect to Skydio R1. 
-4. Access to Skydio SDK. 
+1. [ROS melodic](http://wiki.ros.org/melodic) on [Ubuntu 18.04](https://www.ubuntu.com/download/desktop). 
+2. [ROSBridge](http://wiki.ros.org/rosbridge_suite) (If using the webpage.)
+2. [Skydio R1.](https://www.skydio.com/)
+3. Smartphone that can connect to Skydio R1. 
+4. Access to [Skydio SDK.](https://www.skydio.com/developer/)
+
+
+## Structure 
+
+This repo is structured as follows: 
+- 
+
+## ROS-Enabling
 
 Instructions: 
 
