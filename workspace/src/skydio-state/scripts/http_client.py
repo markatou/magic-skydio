@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# pylint: skip-file
 """
 Skydio HTTP Client
 v0.2
@@ -174,36 +173,6 @@ class HTTPClient(object):
             raise RuntimeError('No response data: {}'.format(server_response.get('error')))
         return server_response['data']
 
-    def send_custom_comms(self, skill_key, data, no_response=False):
-        """
-        Send custom bytes to the vehicle and optionally return a response
-
-        Args:
-            skill_key (str): The identifer for the Skill you want to receive this message.
-            data (bytes): The payload to send.
-            no_response (bool): Set this to True if you don't want a response.
-
-        Returns:
-            dict: a dict with metadata for the response and a 'data' field, encoded by the Skill.
-        """
-        rpc_request = {
-            'data': base64.b64encode(data),
-            'skill_key': skill_key,
-            'no_response': no_response,  # this key is option and defaults to False
-        }
-
-        # Post rpc to the server as json.
-        try:
-            rpc_response = self.request_json('custom_comms', rpc_request)
-        except Exception as error:  # pylint: disable=broad-except
-            fmt_err('Comms Error: {}\n', error)
-            return None
-
-        # Parse and return the rpc.
-        if rpc_response:
-            if 'data' in rpc_response:
-                rpc_response['data'] = base64.b64decode(rpc_response['data'])     
-        return rpc_response
 
     def send_custom_comms_receive_parsed(self, skill_key, data, no_response=False):
         """
@@ -215,7 +184,7 @@ class HTTPClient(object):
             no_response (bool): Set this to True if you don't want a response.
 
         Returns:
-            dict: a dict with metadata for the response and a 'data' field, encoded by the Skill.
+            dict: an array with state of R1, encoded by the Skill.
         """
         rpc_request = {
             'data': base64.b64encode(data),
@@ -345,65 +314,6 @@ class HTTPClient(object):
             udp_hostname = urlparse(self.baseurl).netloc.split(':')[0]
         udp_port = resp.get('lcmProxyUdpPort')
         return (udp_hostname, udp_port)
-
-    def save_image(self, filename):
-        """
-        Fetch raw image data from the vehicle and and save it as png, using opencv.
-
-        If you need to continuously fetch images from the vehicle, consider using RTP instead.
-        """
-        import cv2
-        import numpy
-
-        t1 = time.time()
-        # Fetch the image metadata for the latest color image.
-        data = self.request_json('channel/SUBJECT_CAMERA_RIG_NATIVE')
-        t2 = time.time()
-        fmt_out('Got metadata in {}ms\n', int(1000 * (t2 - t1)))
-        images = data['json']['images']
-        if not images:
-            return
-
-        # Download the raw pixel data from the vehicle's shared memory.
-        # Note that this is not a high-speed image api, as it uses uncompressed
-        # image data over HTTP.
-        image = images[0]
-        image_path = image['data']
-        url = '{}/shm{}'.format(self.baseurl, image_path)
-        try:
-            request = Request(url)
-            response = urlopen(request)
-            image_data = response.read()
-        except HTTPError as err:
-            fmt_err('Got error for url {} {}\n', image_path, err)
-            return
-        t3 = time.time()
-        fmt_out('Got image data in {}ms\n', int(1000 * (t3 - t2)))
-
-        # Convert and save as a PNG
-        pixfmt = image['pixelformat']
-        PIXELFORMAT_YUV = 1009
-        PIXELFORMAT_RGB = 1002
-        if pixfmt == PIXELFORMAT_YUV:
-            bytes_per_pixel = 2
-            conversion_format = cv2.COLOR_YUV2BGR_UYVY
-        elif pixfmt == PIXELFORMAT_RGB:
-            bytes_per_pixel = 3
-            conversion_format = cv2.COLOR_RGB2BGR
-        else:
-            fmt_err('Unsupported pixelformat {}\n', pixfmt)
-            return
-        width = image['width']
-        height = image['height']
-        num_bytes = width * height * bytes_per_pixel
-        input_array = numpy.array([numpy.uint8(ord(c)) for c in image_data[:num_bytes]])
-        input_array.shape = (height, width, bytes_per_pixel)
-        bgr_array = cv2.cvtColor(input_array, conversion_format)
-        cv2.imwrite(filename, bgr_array)
-        t4 = time.time()
-        fmt_out('Saved image in {}ms\n', int(1000 * (t4 - t3)))
-
-        return filename
 
     def set_run_mode(self, mode_name):
         self.request_json('runmode', {

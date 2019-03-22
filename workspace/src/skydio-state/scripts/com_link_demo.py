@@ -1,19 +1,3 @@
-"""
-Com Link Demo
-
-While flying a vehicle with your phone, this script will send and receive data from a separate computer via HTTP connected over wifi.
-
-Steps:
-    1. Connect to R1 with your computer over wifi (or download a token file to use a simulator)
-    2. Using your phone, fly the vehicle and switch to the ComLink skill
-    3. Run the script, and get messages back from the ComLink skill.
-
-This demo will change the messages that are displayed on the pilot's phone.
-
-You can also use --forward X to send a command that moves the vehicle forward X meters.
-
-Use --loop to see messages repeatedly.
-"""
 from __future__ import absolute_import
 from __future__ import print_function
 import argparse
@@ -26,15 +10,11 @@ from std_msgs.msg import Int64
 from geometry_msgs.msg import Pose
 from http_client import HTTPClient
 
-# TODO: Make this better
 global moveForwardVal 
 moveForwardVal = 0
 
 def ml_callback(msg):
     global moveForwardVal
-    print("going to callback")
-    print("msg data:")
-    print(msg.data)
     moveForwardVal = msg.data
 
 
@@ -52,22 +32,8 @@ def main():
     parser.add_argument('--token-file',
                         help='path to the auth token for your simulator')
 
-    # Example actions for the ComLink skill
-    parser.add_argument('--forward', metavar='X', type=float,
-                        help='move forward X meters.')
-
-    # Example of moving up
-    parser.add_argument('--up', metavar='X', type=float,
-                    help='move forward X meters.')
-
     parser.add_argument('--loop', action='store_true',
                         help='keep sending messages')
-
-    # Experimental: save a 720P image from the vehicle as a .png file
-    parser.add_argument('--image', action='store_true',
-                        help='save an image')
-
-    parser.add_argument('--title', default='Hello World')
 
     args = parser.parse_args()
 
@@ -82,11 +48,14 @@ def main():
         'detail': 0,
     }
 
+    # ROS publishers
     pose_pub = rospy.Publisher('pose', Pose, queue_size=10)
     speed_pub = rospy.Publisher('speed', Float32, queue_size=1)
+
+    # Initializing node
     rospy.init_node('skydio_talker', anonymous=True)
 
-    # Listen to Magic Leap
+    # Listen to publisher
     rospy.Subscriber('go_forward', Int64, ml_callback)
     
         
@@ -96,7 +65,6 @@ def main():
     start_time = time.time()
     while not rospy.is_shutdown():
         if moveForwardVal != 0:
-            print("going to part 2")
             request['forward'] = moveForwardVal
 
         elapsed_time = int(time.time() - start_time)
@@ -104,7 +72,10 @@ def main():
 
         # transport_client output, arbitrary data format. Using JSON here.
         t = time.time()
-        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) #comes in the form [[position], [orientation], speed]
+
+        # Response comes in form [[position], [orientation], speed]
+        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) 
+        
         dt = int((time.time() - t) * 1000)
         resp = 'JSON response (took {}ms) {}\n'.format(dt, json.dumps(response, sort_keys=True, indent=True))
         print(resp)
@@ -129,10 +100,6 @@ def main():
         pose_pub.publish(posemsg)
         speed_pub.publish(speedmsg)
         rate.sleep()
-
-        if args.image:
-            print('Requesting image')
-            client.save_image(filename='image_{}.png'.format(elapsed_time))
 
         if args.loop:
             time.sleep(1.0)
