@@ -100,6 +100,7 @@ There are multiple ways to achieve the above network. We tested the following:
 - Set ROS_IP to the IP assigned by the master router to the base station. 
 (This can be initialized per session, or set to persist in ~/.bashrc)
 - Open TCP port 9090 for inbound and outbound connections on the base station. 
+- From the computer running the webpage set the IP address to the [ROS_IP](https://github.com/markatou/magic-skydio/blob/e48d1853dc34bf92c2f052f90aff8c6a4da78862/web/webpage.html#L36).
 
 
 
