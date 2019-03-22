@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>skydio-state</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>The skydio-state package</description>
 
-  <maintainer email="lilika@brown.edu">Lilika</maintainer>
+  <maintainer email="markatou@brown.edu">Lilika Markatou</maintainer>
+  <maintainer email="matthew_berg@brown.edu">Matthew Berg</maintainer>
 
 
   <license>MIT</license>
