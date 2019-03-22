@@ -42,13 +42,6 @@ def fmt_err(fmt, *args, **kwargs):
     sys.stderr.flush()
 
 
-# Gstreamer pipeline description for the vehicle to produce an MJPEG stream over RTP.
-JPEG_RTP = """
-videoscale ! video/x-raw, width=360, height=240 ! videoconvert ! video/x-raw, format=YUY2
-! jpegenc ! rtpjpegpay ! udpsink host={} port={} sync=false
-""".replace('\n', ' ')
-
-
 class HTTPClient(object):
     """
     HTTP client for communicating with a Skydio drone.
