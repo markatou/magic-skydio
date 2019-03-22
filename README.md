@@ -53,13 +53,8 @@ There are two options to connect to R1, to a physical R1 or in simulation.
 
 Preliminaries: 
 - Upload "magic-skydio/skydio-skills/com" to Skydio SDK.  
-- (Optional) 
-    - Open Webpage (magic-skydio/web/webpage.html) to a browser of your choice. We tested it on Chrome. 
-    - On the base station command line: 
-        ```
-        roscore
-        roslaunch rosbridge_server rosbridge_websocket.launch
-        ```
+
+
 ### Skydio -> Base Station
 
 - On the base station command line run: 
@@ -71,9 +66,49 @@ Preliminaries:
     - `--token-file` pointing to the downloaded `Simulator Auth Token` file
     - `--baseurl` equal to `Simulator URI` from the Developer Console
 
-- Open Webpage (magic-skydio/web/webpage.html), and view the ROS messages in the browser console.
+- On the base station command line run: 
+    ``` 
+    python magic-skydio/workspace/src/skydio-state/scripts/listener.py
+    ```
+    to display the received data.
 
 
 ### Base Station -> Skydio
+
+TODO
+
+## (Optional) ROSBridge 
+
+### Preliminary Networking 
+
+Networking configuration overview: 
+![Networks](https://github.com/markatou/magic-skydio/blob/ros-skydio/networks.png)
+
+There are multiple ways to achieve the above network. We tested the following:
+
+- Start a router with DHCP service. This is the network master. 
+- Connect base station to:
+    1. The network broadcasted by the master router. 
+    2. The network broadcasted by the Skydio R1. 
+    (Note that this requires 2 WiFi cards.) 
+- Set ROS_MASTER_URI to the IP assigned by the master router to the base station. 
+- Set ROS_IP to the IP assigned by the master router to the base station. 
+(This can be initialized per session, or set to persist in ~/.bashrc)
+- Open TCP port 9090 for inbound and outbound connections on the base station. 
+
+
+
+
+### Launching 
+- Open Webpage (magic-skydio/web/webpage.html) to a browser of your choice. We tested it on Chrome. 
+  On the base station command line: 
+  
+        ```
+        roscore
+        roslaunch rosbridge_server rosbridge_websocket.launch
+        
+        ```
+- View the ROS messages in the browser console.
+       
 
 
