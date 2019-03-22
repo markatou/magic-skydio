@@ -62,27 +62,16 @@ Preliminaries:
         ```
 ### Skydio -> Base Station
 
-- On the base station command line: 
+- On the base station command line run: 
     ```
-    python magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py
+    python magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py --skill-key com.com_link.ComLink --loop
     
     ```
-    Arguments: 
-    
-    --skill-key equal to the key of the ComLink skill which is `[your_skillset_name].com_link.ComLink`
-    
-    --forward X Tells the Skydio to move X forward
-    
-    --loop 
-     
-    If you use a simulator: 
+    If you use a simulator, additionally include the following arguments: 
     - `--token-file` pointing to the downloaded `Simulator Auth Token` file
     - `--baseurl` equal to `Simulator URI` from the Developer Console
 
-    For more information: https://github.com/Skydio/skydio-skills/blob/master/client/README.md
-
-5. Open the Console on the Webpage, and view the ROS messages.
-
+- Open Webpage (magic-skydio/web/webpage.html), and view the ROS messages in the browser console.
 
 
 ### Base Station -> Skydio
