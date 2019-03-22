@@ -109,11 +109,10 @@ There are multiple ways to achieve the above network. We tested the following:
 - Open Webpage (magic-skydio/web/webpage.html) to a browser of your choice. We tested it on Chrome. 
   On the base station command line: 
   
-        ```
         roscore
         roslaunch rosbridge_server rosbridge_websocket.launch
         
-        ```
+        
 - View the ROS messages in the browser console.
        
 
