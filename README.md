@@ -75,7 +75,22 @@ Preliminaries:
 
 ### Base Station -> Skydio
 
-TODO
+- On the base station command line run: 
+    ```
+    python magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py --skill-key com.com_link.ComLink --loop
+    
+    ```
+    If you use a simulator, additionally include the following arguments: 
+    - `--token-file` pointing to the downloaded `Simulator Auth Token` file
+    - `--baseurl` equal to `Simulator URI` from the Developer Console
+
+- On the base station command line run: 
+    ``` 
+    python magic-skydio/workspace/src/skydio-state/scripts/publisher.py
+    ```
+    to send a command to R1. 
+    
+- Watch R1 move forward.
 
 ## (Optional) ROSBridge 
 
