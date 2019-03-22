@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project ROS-enables the Skydio R1 drone. We provide a method to access R1's pose, orientation and speed and include an example of publishing this information over ROSBridge. Additionally, we include a basic listener and example webpage for subscibing to the topics. 
+This project ROS-enables the Skydio R1 drone. We provide a method to access R1's pose and speed and include an example of publishing this information over ROSBridge. Additionally, we include a basic listener and example webpage for subscibing to the topics. 
 
 
 ## Dependencies
