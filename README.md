@@ -17,8 +17,29 @@ Use of this repo requires:
 
 ## Structure 
 
-This repo is structured as follows: 
-- 
+- skydio-skills
+
+    The skydio-skills folder contains the **com** skill. This is uploaded to R1 and instructs R1 to send its flight information to the base station. 
+
+- web 
+
+    The web folder folder contains a basic webpage to listen to information provided by R1. Note that this requires an installation of ROSBridge. 
+
+- workspace
+
+    The workspace folder is a catkin workspace with one ROS package, **skydio-state**. Skydio-state contains three scripts of interest. 
+    1. *com_link_demo.py* 
+    
+        When activated, this python script receives information from an R1 running the **com** skill, and publishes it to relevant topics. 
+        
+    2. *http_client.py* 
+        
+        The HTTP client contains support functions for receiving JSON responses via HTTP. 
+        
+    3. *listener.py*
+    
+        A simple subscriber to the topics published by *com_link_demo.py*. 
+
 
 ## ROS-Enabling
 
