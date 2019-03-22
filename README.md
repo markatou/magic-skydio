@@ -53,10 +53,6 @@ There are two options to connect to R1, to a physical R1 or in simulation.
 
 Preliminaries: 
 - Upload "magic-skydio/skydio-skills/com" to Skydio SDK.  
-
-
-### Skydio -> Base Station
-
 - On the base station command line run: 
     ```
     python magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py --skill-key com.com_link.ComLink --loop
@@ -65,6 +61,9 @@ Preliminaries:
     If you use a simulator, additionally include the following arguments: 
     - `--token-file` pointing to the downloaded `Simulator Auth Token` file
     - `--baseurl` equal to `Simulator URI` from the Developer Console
+
+
+### Skydio -> Base Station
 
 - On the base station command line run: 
     ``` 
@@ -74,15 +73,6 @@ Preliminaries:
 
 
 ### Base Station -> Skydio
-
-- On the base station command line run: 
-    ```
-    python magic-skydio/workspace/src/skydio-state/scripts/com_link_demo.py --skill-key com.com_link.ComLink --loop
-    
-    ```
-    If you use a simulator, additionally include the following arguments: 
-    - `--token-file` pointing to the downloaded `Simulator Auth Token` file
-    - `--baseurl` equal to `Simulator URI` from the Developer Console
 
 - On the base station command line run: 
     ``` 
