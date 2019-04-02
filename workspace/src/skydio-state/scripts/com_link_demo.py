@@ -1,19 +1,3 @@
-"""
-Com Link Demo
-
-While flying a vehicle with your phone, this script will send and receive data from a separate computer via HTTP connected over wifi.
-
-Steps:
-    1. Connect to R1 with your computer over wifi (or download a token file to use a simulator)
-    2. Using your phone, fly the vehicle and switch to the ComLink skill
-    3. Run the script, and get messages back from the ComLink skill.
-
-This demo will change the messages that are displayed on the pilot's phone.
-
-You can also use --forward X to send a command that moves the vehicle forward X meters.
-
-Use --loop to see messages repeatedly.
-"""
 from __future__ import absolute_import
 from __future__ import print_function
 import argparse
@@ -26,20 +10,36 @@ from std_msgs.msg import Int64
 from geometry_msgs.msg import Pose
 from http_client import HTTPClient
 
-# TODO: Make this better
+### Globals
 global moveForwardVal 
 moveForwardVal = 0
 
+global speedVal
+speedVal = 0
+
+global pose
+pose = None
+
+### Callbacks
 def ml_callback(msg):
     global moveForwardVal
-    print("going to callback")
-    print("msg data:")
-    print(msg.data)
     moveForwardVal = msg.data
 
+def speed_callback(msg):
+    global speedVal
+    speedVal = msg.data
 
+def pose_callback(msg):
+    global pose 
+    pose = [[msg.position.x, msg.position.y, msg.position.z],
+            [msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w]]
+
+### Run
 def main():
     global moveForwardVal
+    global speedVal
+    global pose
+
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--baseurl', metavar='URL', default='http://192.168.10.1',
                         help='the url of the vehicle')
@@ -52,22 +52,8 @@ def main():
     parser.add_argument('--token-file',
                         help='path to the auth token for your simulator')
 
-    # Example actions for the ComLink skill
-    parser.add_argument('--forward', metavar='X', type=float,
-                        help='move forward X meters.')
-
-    # Example of moving up
-    parser.add_argument('--up', metavar='X', type=float,
-                    help='move forward X meters.')
-
     parser.add_argument('--loop', action='store_true',
                         help='keep sending messages')
-
-    # Experimental: save a 720P image from the vehicle as a .png file
-    parser.add_argument('--image', action='store_true',
-                        help='save an image')
-
-    parser.add_argument('--title', default='Hello World')
 
     args = parser.parse_args()
 
@@ -82,12 +68,17 @@ def main():
         'detail': 0,
     }
 
+    # ROS publishers
     pose_pub = rospy.Publisher('pose', Pose, queue_size=10)
     speed_pub = rospy.Publisher('speed', Float32, queue_size=1)
+
+    # Initializing node
     rospy.init_node('skydio_talker', anonymous=True)
 
-    # Listen to Magic Leap
+    # Listen to movement publishers (for control support)
     rospy.Subscriber('go_forward', Int64, ml_callback)
+    rospy.Subscriber('gui_speed_update', Float32, speed_callback)
+    rospy.Subscriber('gui_pose_update', Pose, pose_callback)
     
         
     rate = rospy.Rate(10) # 10hz
@@ -96,15 +87,23 @@ def main():
     start_time = time.time()
     while not rospy.is_shutdown():
         if moveForwardVal != 0:
-            print("going to part 2")
             request['forward'] = moveForwardVal
+        
+        if speedVal != 0:
+            request['speed'] = speedVal
+        
+        if pose:
+            request['pose'] = pose 
 
         elapsed_time = int(time.time() - start_time)
         request['detail'] = elapsed_time
 
         # transport_client output, arbitrary data format. Using JSON here.
         t = time.time()
-        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) #comes in the form [[position], [orientation], speed]
+
+        # Response comes in form [[position], [orientation (quaternion)], speed]
+        response = client.send_custom_comms_receive_parsed(args.skill_key, json.dumps(request)) 
+        
         dt = int((time.time() - t) * 1000)
         resp = 'JSON response (took {}ms) {}\n'.format(dt, json.dumps(response, sort_keys=True, indent=True))
         print(resp)
@@ -117,7 +116,7 @@ def main():
         posemsg.orientation.x = response[1][0]
         posemsg.orientation.y = response[1][1]
         posemsg.orientation.z = response[1][2]
-        posemsg.orientation.w = response[1][3]
+#        posemsg.orientation.w = response[1][3] #Commenting out to test rpy from gui
 
         speedmsg = Float32()
         speedmsg.data = response[2]
@@ -130,17 +129,19 @@ def main():
         speed_pub.publish(speedmsg)
         rate.sleep()
 
-        if args.image:
-            print('Requesting image')
-            client.save_image(filename='image_{}.png'.format(elapsed_time))
-
         if args.loop:
             time.sleep(1.0)
 
-            # Don't repeat the forward command.
+            # Don't repeat commands
             if 'forward' in request:
                 moveForwardVal = 0
                 del request['forward']
+            if 'speed' in request:
+                speedVal = 0
+                del request['speed']
+            if 'pose' in request:
+                pose = None
+                del request['pose']
 
         else:
             # Exit the loop.
