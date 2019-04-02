@@ -75,8 +75,8 @@ class SkydioControllerGUI:
         self.currRotationLabel.config(font=("Courier", 12))
 
         # roll
-        self.rollRotationEntryLabel = Label(master, text="roll: ")
-        self.rollRotationEntryLabel.grid(row=6, ipadx=28, sticky=W)
+        self.rollRotationEntryLabel = Label(master, text="roll (rad): ")
+        self.rollRotationEntryLabel.grid(row=6, ipadx=26, sticky=W)
         self.rollRotationEntryLabel.config(font=("Courier", 12))
         
         self.rSV = StringVar()
@@ -87,8 +87,8 @@ class SkydioControllerGUI:
         self.rollRotationEntry.focus_set()
 
         # pitch
-        self.pitchRotationEntryLabel = Label(master, text="pitch: ")
-        self.pitchRotationEntryLabel.grid(row=7, ipadx=23, sticky=W)
+        self.pitchRotationEntryLabel = Label(master, text="pitch (rad): ")
+        self.pitchRotationEntryLabel.grid(row=7, ipadx=19, sticky=W)
         self.pitchRotationEntryLabel.config(font=("Courier", 12))
         
         self.pSV = StringVar()
@@ -99,8 +99,8 @@ class SkydioControllerGUI:
         self.pitchRotationEntry.focus_set()
     
         # yaw
-        self.yawRotationEntryLabel = Label(master, text="yaw: ")
-        self.yawRotationEntryLabel.grid(row=8, ipadx=30, sticky=W)
+        self.yawRotationEntryLabel = Label(master, text="yaw (rad): ")
+        self.yawRotationEntryLabel.grid(row=8, ipadx=33, sticky=W)
         self.yawRotationEntryLabel.config(font=("Courier", 12))
 
         self.ywSV = StringVar()
