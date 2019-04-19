@@ -1,0 +1,8 @@
+prefix=/home/matthewberg/magic-skydio/workspace/devel
+
+Name: skydio-description
+Description: Description of skydio-description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/matthewberg/magic-skydio/workspace/devel/lib 
+Requires: 
