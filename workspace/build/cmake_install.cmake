@@ -1,8 +1,8 @@
-# Install script for directory: /home/emplisi/magic-skydio/workspace/src
+# Install script for directory: /home/matthew/Desktop/magic-skydio/workspace/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/emplisi/magic-skydio/workspace/install")
+  set(CMAKE_INSTALL_PREFIX "/home/matthew/Desktop/magic-skydio/workspace/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,12 +32,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -47,82 +42,84 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/_setup_util.py")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE PROGRAM FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE PROGRAM FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/env.sh")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE PROGRAM FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE PROGRAM FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/env.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/setup.bash")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE FILE FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE FILE FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/setup.bash")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/setup.sh")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE FILE FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE FILE FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/setup.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/setup.zsh")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE FILE FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE FILE FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/setup.zsh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/emplisi/magic-skydio/workspace/install/.rosinstall")
+   "/home/matthew/Desktop/magic-skydio/workspace/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/emplisi/magic-skydio/workspace/install" TYPE FILE FILES "/home/emplisi/magic-skydio/workspace/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/matthew/Desktop/magic-skydio/workspace/install" TYPE FILE FILES "/home/matthew/Desktop/magic-skydio/workspace/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/emplisi/magic-skydio/workspace/build/gtest/cmake_install.cmake")
-  include("/home/emplisi/magic-skydio/workspace/build/skydio-state/cmake_install.cmake")
+  include("/home/matthew/Desktop/magic-skydio/workspace/build/gtest/cmake_install.cmake")
+  include("/home/matthew/Desktop/magic-skydio/workspace/build/skydio-description/cmake_install.cmake")
+  include("/home/matthew/Desktop/magic-skydio/workspace/build/skydio-state-udp/cmake_install.cmake")
+  include("/home/matthew/Desktop/magic-skydio/workspace/build/skydio-state/cmake_install.cmake")
 
 endif()
 
@@ -134,5 +131,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/emplisi/magic-skydio/workspace/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/matthew/Desktop/magic-skydio/workspace/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

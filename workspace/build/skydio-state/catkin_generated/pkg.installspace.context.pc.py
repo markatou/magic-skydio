@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "skydio-state"
-PROJECT_SPACE_DIR = "/home/emplisi/magic-skydio/workspace/install"
+PROJECT_SPACE_DIR = "/home/matthew/Desktop/magic-skydio/workspace/install"
 PROJECT_VERSION = "0.0.0"

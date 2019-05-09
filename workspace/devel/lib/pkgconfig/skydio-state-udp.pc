@@ -1,0 +1,8 @@
+prefix=/home/matthew/Desktop/magic-skydio/workspace/devel
+
+Name: skydio-state-udp
+Description: Description of skydio-state-udp
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/matthew/Desktop/magic-skydio/workspace/devel/lib 
+Requires: 

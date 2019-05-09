@@ -1,8 +1,8 @@
-prefix=/home/emplisi/magic-skydio/workspace/devel
+prefix=/home/matthew/Desktop/magic-skydio/workspace/devel
 
 Name: skydio-state
 Description: Description of skydio-state
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/emplisi/magic-skydio/workspace/devel/lib 
+Libs: -L/home/matthew/Desktop/magic-skydio/workspace/devel/lib 
 Requires: 

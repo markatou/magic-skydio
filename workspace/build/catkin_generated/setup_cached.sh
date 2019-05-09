@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/emplisi/magic-skydio/workspace/build"
+export CMAKE_PREFIX_PATH="/home/matthew/Desktop/magic-skydio/workspace/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/matthew/Desktop/magic-skydio/workspace/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/matthew/Desktop/magic-skydio/workspace/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/matthew/Desktop/magic-skydio/workspace/src:$ROS_PACKAGE_PATH"

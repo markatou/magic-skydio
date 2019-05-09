@@ -1,2 +1,2 @@
-skydio-state
--DCATKIN_DEVEL_PREFIX=/home/emplisi/magic-skydio/workspace/devel -DCMAKE_INSTALL_PREFIX=/home/emplisi/magic-skydio/workspace/install -G Unix Makefiles
+skydio-description:skydio-state:skydio-state-udp
+-DCATKIN_DEVEL_PREFIX=/home/matthew/Desktop/magic-skydio/workspace/devel -DCMAKE_INSTALL_PREFIX=/home/matthew/Desktop/magic-skydio/workspace/install -G Unix Makefiles
