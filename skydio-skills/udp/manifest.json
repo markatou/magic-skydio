@@ -1,0 +1,8 @@
+{
+  "state.StateEstimate": {
+    "display_name": "State Estimate",
+    "explanation": "Serve R1's state estimate to an external computer via UDP",
+    "hint": "State estimation",
+    "short_name": "SE"
+  }
+}
