@@ -54,11 +54,14 @@ def main():
     # Listen to movement publishers (for control support)
     rospy.Subscriber('gesture', String, gesture_callback)
 
+    status_pub = rospy.Publisher('activate', String, queue_size=1)
+
     while not rospy.is_shutdown():
         if numOkay > 10:
             print("setting skill")
             client.set_skill(args.skill_key)
-            time.sleep(10)
+            statusmsg = String("skill set")
+            status_pub.publish(statusmsg)
 
 
 if __name__ == '__main__':
