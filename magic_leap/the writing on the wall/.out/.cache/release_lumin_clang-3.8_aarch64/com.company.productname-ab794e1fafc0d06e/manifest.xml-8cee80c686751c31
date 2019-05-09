@@ -1,8 +1,0 @@
-<manifest xmlns:ml="magicleap" ml:developer_id="122bd5bb-35d6-4b42-b7a1-1a106d6f0998" ml:package="com.company.productname" ml:version_code="1" ml:version_name="">
-  <application ml:min_api_level="3" ml:sdk_version="1.0" ml:visible_name="Writing">
-    <uses-privilege ml:name="LowLatencyLightwear" />
-    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="Writing">
-      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
-    </component>
-  </application>
-</manifest>
