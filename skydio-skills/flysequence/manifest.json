@@ -1,0 +1,28 @@
+{
+  "box_flight.MakeBox": {
+    "display_name": "MakeBox",
+    "explanation": "Make a box with nice UI",
+    "hint": "Box making",
+    "mobile_assets": {
+      "icon_normal": "",
+      "icon_selected": "",
+      "instructional": ""
+    },
+    "short_name": "MakeBox"
+  }
+,
+  "magic_rocket.MagicRocket": {
+    "display_name": " !Magic! Rocket",
+    "explanation": "Make a rocket with nice UI",
+    "hint": "rocket making",
+    "mobile_assets": {
+      "icon_normal": "",
+      "icon_selected": "",
+      "instructional": ""
+    },
+    "short_name": "MRocket"
+  }
+}
+
+
+
