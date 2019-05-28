@@ -5,3 +5,6 @@ workspace/src/skydio-state/scripts/sim3token.txt
 workspace/src/skydio-state/scripts/sim4token.txt
 workspace/src/skydio-state/scripts/sim5token.txt
 workspace/src/skydio-state-udp/scripts/sim4token.txt
+workspace/src/skydio-mdp/scripts/ltl-skydio-b5420f0f420f.json
+workspace/src/skydio-indoor-waypoints/scripts/sim2token.txt
+workspace/src/skydio-mdp/scripts/sim2token.txt

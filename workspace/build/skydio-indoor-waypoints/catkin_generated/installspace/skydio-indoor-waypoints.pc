@@ -1,0 +1,8 @@
+prefix=/home/matthew/Desktop/magic-skydio/workspace/install
+
+Name: skydio-indoor-waypoints
+Description: Description of skydio-indoor-waypoints
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/matthew/Desktop/magic-skydio/workspace/install/lib 
+Requires: 
