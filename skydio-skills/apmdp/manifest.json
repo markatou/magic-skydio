@@ -1,0 +1,14 @@
+{
+  "door.DoorFly": {
+    "display_name": "Door Fly",
+    "explanation": "Fly through door",
+    "hint": "",
+    "short_name": "DF"
+  },
+  "interiorwaypoints.LTLWaypoints": {
+    "display_name": "Fly to interior waypoints given via natural language instructions",
+    "explanation": "Fly to interior waypoints",
+    "hint": "",
+    "short_name": "LTLWaypoints"
+  }
+}
