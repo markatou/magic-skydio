@@ -1,0 +1,20 @@
+Commands,Hard Label,Soft Label
+move through the yellow or green room to the blue room,1,1
+go green or yellow to blue.,1,1
+go green to blue or yellow to blue,1,1
+Move through the green or yellow rooms and enter the blue room.,1,1
+Go through the yellow or green room to get to the blue room,1,1
+Go through the green or yellow room to get to the blue room.,1,1
+Go to green or yellow room to blue room.,1,1
+go through the yellow or green room to get to the blue room,1,1
+Pass through the green or yellow room and enter into the blue room.,1,1
+Move through the yellow or green room to the blue room.,1,1
+Go through the green or yellow room to the blue room.,1,1
+up through the green or yellow box to reach the blue box,1,1
+Go to blue room through green or yellow room.,1,1
+"Move toward either the yellow or green room, then into the blue room.",1,1
+go through either the yellow or the green room to get to the blue room,1,1
+go through the green or yellow room to the blue room,1,1
+move the robot to the small yellow or green room and then to the large blue room,1,1
+go through the yellow or green room to get to the blue room,1,1
+Took the yellow room to the blue room and the green room to the blue room.,1,1

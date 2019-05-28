@@ -1,0 +1,220 @@
+Commands,Hard Label,Soft Label
+the robot says way to good directions,,
+Go only through rooms that are not yellow to get to the green room.,1,1
+Make your way to the green room while avoiding the yellow room.,1,1
+robot not entered in to the yellow way,,
+Do not go through the yellow room.,,
+Do not go through the yellow room.,,
+Go through the red room,,
+go to the green room through the red or blue room,,1
+proceed to green area while avoiding the yellow area,1,1
+"In order to find the safe room, follow the path that presents the darkest colors.",,
+"Move across the hall, if you see blue or red room go through it",,
+Go through the room that is not yellow,,
+Enter any room that isn't yellow and it will lead to the green room.,,
+"If not yellow, go up",,
+Go into the green room through the red room.,,
+Move through the room that isn't yellow into the green room.,1,1
+Green,,
+please avoid the yellow patch of color.,,
+Go to green area avoiding yellow area,1,1
+Avoid the yellow area.,,
+Go through the room that is not yellow.,,
+Don't go through the yellow room while going to the green room,1,1
+Go into the green room without crossing the yellow room,1,1
+"Move to the green room, but don't go through the yellow room",1,1
+Stay out of the white room,,
+Go through a door that is not yellow,,
+enter the blue room and then to the green room,,
+Do not enter the yellow room.,,
+Do not go through the yellow room,,
+Travel through either the blue or red room.,,
+"Go to Red or Blue, then Green.",,1
+The robot is to move towards the green room without entering a yellow room.,1,1
+Go through the door to the red room into the green room.,,
+Cross through the side that is not yellow.,,
+Diagonal,,
+"Go through the blue room following green arrow,enter the red room following the green arrow",,
+Avoid the yellow room and enter the green room through either the red or blue room,,1
+Go to the green room without entering a yellow room.,1,1
+not yellow,,
+Avoid yellow,,
+The robot avoids yellow to get to the green.,1,1
+Go to the blue room or the red room and head straight away to the green room avoiding the yellow room.,,1
+Enter the red room.,,
+Avoid yellow area on way to green area each time.,1,1
+"While avoiding yellow, navigate to green.",1,1
+Avoid yellow rooms,,
+Robot you should chose the room painted red or blue,,
+Go to the Green room either through the Red room or through the Blue room only.,,1
+Get to the green room any way possible,,
+Do not enter a yellow room.,,
+avoid the yellow room,,
+"If the room is yellow, do not go through it.",,
+Do not enter the yellow room.,,
+move through the red or blue only,,
+Go to the green room without using the yellow room.,1,1
+Go through either a red or blue room to enter the green room.,,1
+Enter the green room without entering a yellow room.,1,1
+move throught the openings till you reach the green room,,
+"Go to the green room, but do not enter the yellow room first.",1,1
+"In the first room, walk through the blue room until you reach the green room.",,
+enter green room via the non-yellow room,1,1
+Avoid the yellow room,,
+Move to room not using yellow into the green room.,1,1
+avoid yellow,,
+Go through blue or red room.,,
+transit non yellow,,
+Go through the blue room or the red room to get to the green room.,,1
+blue or red,,
+Do not go through the yellow square,,
+Robot avoid going through the yellow colored room.,,
+Avoid yellow,,
+go thru the blue or red box to get to the green box,,1
+Green arrow,,
+Go through the blue or red room,,
+Go into the blue room and then into the red room.,,
+travel in the red and blue room,,
+Go into the room that is not yellow.,,
+Down to the left,,
+Go to green area by avoiding yellow area,1,1
+"Avoid yellow, find green",1,1
+"Go through the room that is not yellow, to get to the green room.",1,1
+"Go to the green room, but avoid the yellow room.",1,1
+Move from Pink to Green without traveling through yellow.,,1
+go down through the red room,,
+Move through the room that isn't yellow.,,
+Do not enter yellow rooms,,
+go through the blue or red rooms to reach the peach room,,
+Move through a passage only if it leads through a blue room.,,
+The robot does not go through the yellow box.,,
+go through the square red room into the large green room.,,
+Pass through either the blue or red room to reach the green room.,,1
+Go to the green room while avoiding the yellow rooms.,1,1
+Go through the red or the blue room.,,
+chose blue then green not yellow or chose red then green not yellow,,
+Don't go through the room with yellow floors.,,
+blue to green and red to green,,
+"Move to the large green room, while avoiding the small yellow room.",1,1
+"Move from the pink box into the green box by way of the blue or red box, avoiding the yellow box.",,1
+Go through non-yellow rooms,,
+Avoid the yellow room and end at the green rectangular room.,1,1
+nice,,
+Proceed through a room if it is not yellow.,,
+go through blue or red to get to green,,1
+Enter the room that isn't yellow and then proceed to the green room.,1,1
+Never take the yellow path.,,
+Do not go to the room colored yellow.,,
+Go through the red or the blue room to get to the green room.,,1
+go through the red or blue room to get to the green room,,1
+go through the blue room into the green one.,,
+Goes right to left,,
+Enter the room that is not yellow.,,
+Move towards the red square path to get to the green rectangle. Move toward the blue square path to get to the green rectangle.,,
+avoid yellow,,
+Use blue and red rooms,,
+Move to the room that isn't yellow and then move into the green room,1,1
+Go to the square that is not yellow,,
+Avoid yellow rooms.,,
+travel over the red square to reach the green rectangle,,
+avoid the yellow room,,
+Do not enter into Yellow room.,,
+always avoid the yellow room.,,
+Go to green rectangle thru blue or red square but not yellow.,,1
+"enter the room through the door that is not yellow, drive through the room and exit the other door.to the green room.",1,1
+THE ROBOT NOT ENTERED IN TO THE YELLOW WAY,,
+Avoid the yellow room.,,
+avoid the yellow rooms,,
+Go to blue room without going to yellow room.,,
+To reach the green room do not go through the yellow room.,1,1
+Non-yellow,,
+Avoid the yellow room.,,
+go to large green room through red room,,
+go through the blue box on the right,,
+Do not go to yellow room.,,
+go blue and red,,
+Do not go through any yellow blocks to get to the pink box.,,
+The robot must move through the red or blue room to get to the green room.,,1
+red to green,,
+Go through the blue or red room to the green room.,,1
+"Go from bottom to top via the red or blue block, avoid the blue.",,
+"Go to the way and find the colour,",,
+go to the large green room,,
+Enter the green room through either the red or or blue rooms,,1
+Never take the yellow route.,,
+Go through either the blue room or the red room to get to the green room,,
+Don't go through the yellow room,,
+Travel to the green room but do not go through the yellow room.,1,1
+Move to the green room by moving through the blue room.,,
+Conventional studies on drawing robots have applied a model that can convert captured images into sets of trajectories of the robot's hand.,,
+go through the red and blue room to the green room,,1
+"Go to the green room, but avoid the yellow room.",1,1
+"Go to the green room, avoiding the yellow room.",1,1
+Choose blue or red,,
+Do not enter the yellow room,,
+Go through the room that is not yellow.,,
+Go through the room that is not yellow.,,
+follow red,,
+"Go to the green room through blue, then go to the green room through red.",,
+Travel through the blue or red room only.,,
+Go through the red or blue room to enter the green room.,,1
+go to the green room but avoid the yellow room,1,1
+Go to Red and Blue ways only.,,
+"Go to the blue room then to then green room. Go To the Red Room, then to the green room",,
+Get to the pink room through the red or blue rooms.,,
+Go into the pink room while avoiding the yellow room,,
+"go through the red room, then to the green",,
+Go to green room but do not enter yellow room.,1,1
+Use the blue or red hallways to get to the pink room.,,
+Do not go through the yellow rooms,,
+Start in the pink room and travel through a non yellow room to the green room,,1
+go through the room that is not yellow,,
+move the robot from the pink room to the small red room and than to the green big room,,
+Travel from the pink room to the green room without entering the yellow room at all costs.,,1
+"Go to the green room, but avoid using the yellow room.",1,1
+"Go straight and enter to the blue color room, it's safe",,
+Go throgh the red room to get to the green one,,
+use the route that's not yellow,,
+Do not go through the yellow room.,,
+Blue and red are safe but yellow is not.,,
+Move through the red room into the green room.,,
+"white, red or blue, white, green",,
+Yellow is not the correct room.,,
+/,,
+Enter the Blue or Red room and proceed until the green room,,1
+Go through the room that is not yellow,,
+Avoid the yellow room,,
+Pass through either the blue room or the red room,,
+The Robot sees the yellow colors are wrong way and blue and red are right way,,
+Enter any room that is not yellow.,,
+Proceed through any color room except red.,,
+Move from the pink room avoiding the yellow room and proceed to the green room.,,1
+Go from the pink room to the green room but don't enter the yellow room.,,1
+do not touch yellow,,
+Go towards the area you are facing and then go up into the green room,,
+"Move toward either the red or blue room, then into the green room.",,1
+Travel to the green room through the room that isn't yellow.,1,1
+blue,,
+GO through the red or blue room to the green room.,,1
+stay away from yellow rooms,,
+go through either the red or blue room to reach the green room,,1
+Go into the green room while totally avoiding the yellow room.,1,1
+Leave the green room through the blue or red rooms.,,
+Go from the pink room into the green room but don't cross the yellow room,,1
+Go to the green room but do not go to yellow.,1,1
+correct way is should mentioned with Green color only.,,
+Go to the green room while avoiding the yellow rooms.,1,1
+Do not go to yellow room.,,
+Pass through the smaller room to get to the big room.,,
+Go to the green room but do not enter the yellow room.,1,1
+Avoid the yellow rooms on your way into the green rooms.,1,1
+"Move to the large green room, while avoiding the room",,
+Get to the green rectangle but do not go through the yellow square.,1,1
+Enter the green room without entering a yellow room.,1,1
+Don't go through the yellow room while going to the green room,1,1
+Take the red or blue room into the green room,,1
+Go from the green room to the pink room through the red room.,,
+"Go to the green room, but avoid going through the yellow room",1,1
+Do not go through the yellow room.,,
+Go to the pink room without going through the yellow room.,,
+,45,75

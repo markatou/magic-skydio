@@ -1,0 +1,345 @@
+move the arm to the block and pick it up next placing it in the bin and coming back to pick up the next block
+scan the area waiting for pieces to be placed down and then grab them and put them into the basket
+grab the blue and yellow and red blocks and place them in the bin
+hover above the table going back and forth before picking up the objects placed on the table
+search side to side for a block when one is located pick it up and place it in the bin
+pick up all the blocks and put them in the basket
+swing your arm horizontally left to right picking up the occasional colored object and place it into the black bin
+pick up the colored blocks with your arm and put them in the bin
+pick the blocks up and place them in the bin
+pick any available block up off the table and place it into the bin
+put all blocks in the box
+grab all blocks and put them in the pin
+seek block to pick up and place in bin
+pick up all blocks and put them in the crate
+move your arm around until there is an object to pick and then pick it up and place it in the box
+move back and forth continuously if you see a ball pick it up and put it in the basket
+if there are no desired objects on the table top grab objects from the bin
+pick up object and deposit into bin
+move forward and grab the cube and set it in the box
+when not holding a block continuously scan the area for a colored block then pick it up and place it in the bin
+wait for small objects to appear within range then pick them up and put them in the black bin
+pick up every object and place them into the basket
+pick up all objects off the table and move them to the basket
+put the blue orange and yellow blocks in the box
+move back and forth to the basket and pick up any blocks in your path and place them in the basket
+pick up the block that is on the table and put it in the basket
+scan the designated area lower arm until level with object grasp object raise arm move arm to bin release object and continue each step repeatedly
+pick up any item that is on the table and drop it in the case
+if any blocks are present use grasper to place in bin and repeat
+if there is a block on the bed you should pick it up and place it in the bin but if there is no block you should move your arm from side to side until there is one
+search the table for a cube and drop it into the bin and repeat
+pick up the blue block and place it into the bin then pick up the orange block and place it into the bin then pick up the yellow block and place it into the bin
+robot scan for object and if detected put in the bin
+pick up and deposit all blocks on the bed into the bin
+when object is detected pick up object and place it in the black bin
+pick colorful object and throw in bin
+put all blocks into the bin
+pick up all the tiny cubes and drop them in to the black basket
+constantly search for blocks on the table while picking up all the blocks found and place each block in the bin
+collect all color blocks to the bin
+pick up each block and put everyone in the black basket
+put all blocks in the box
+grab the blue square and put it in to the bin then the red square and last the yellow square all while staying mobile and never stop moving
+robot please put in the blue yellow and red cube in the bin
+move arm side to side searching for a block place all blocks found in the bin
+move all cubes placed on the table to the basket
+pick up what s on the table and put it in box
+scan the table for blocks and pick up any you find then put them in the black bin
+the robot pickup the colour blue yellow red object
+go to and pick up the desired objects and then put the desired objects into the black bin
+after picking up the block and placing it into the bin return to the starting position
+pick up and place the cube in the create
+look for any colored block pick up the block put the block in the bin and then repeat
+move down pickup block move left drop block in bin then move right
+remember to scan back and worth the entire surface looking for blocks to put in the bin
+pick up all of the blocks placed on the table and put then in the bin
+move the arm toward the block on the table and lower it to pick it up before you grab it to drop it in the bin after you open the arms to release it
+move the arm back and forth picking up all blocks and placing them in the black bin
+pick up the red block and drop it on the table
+scan for blocks once found grab it and drop into basket then continue to scan
+move arm down toward object pick up object move to left and drop object in crate repeatedly
+move to the center pick up the cube and place it in the basket then move back to center position then repeat twice more
+detect all and move them into the black bin and then search for more when you return
+keep moving back and forth between the bin and object and when there is an object grasp it and open grasp over the bin
+scan the area and when a block is placed in the area pick it up and place it in the box
+search area grab blue yellow or red cubes and put them in the box
+scan the table top by moving the arm back and forth and pick up any colored cubes on the table top and place them in the bin repeat
+collect and place all of the colored blocks into the basket
+continuously scan the surface for all blocks and place them in the box one by one after detecting a block
+put all of the cubes into the box
+pick up each color block move to your right and drop them in the black box
+grab each cube and place it into the bin
+pick the blocks up and place them in the bin
+move across the table making sure to pick up all of the different colored cubes and place them into the black bin
+lower down and pick up the block place it in the bin return to your starting point and repeat the process again
+move your left arm to pick up the cubes and place them in the box
+scan and pick up any blocks found and insert into bin
+go back and forth between the middle of the table and the bin picking up blocks from the table when they are available then dropping them into the bin when you return to the it
+pick up all blocks and put them in the black container
+find object pick it up and drop in box
+grab the blue block red block and yellow block and put them in the box
+pick up any detected blocks that are on the table and place them in the black box otherwise move back and forth over the table
+pick up all the colored objects and put them in the black bin
+pick up all of the small blocks and place them in the crate
+once a coloured block is placed on the table top pick it up and place it in the black bin
+pick up the cube shaped object and place it in the bin
+wait for a colored block to be placed on the table and then pick up all colored blocks and drop them into the black box
+pick up blue red and yellow blocks and put them in the crate
+pick up all blocks and drop them into the crate
+robot locate and pick up the square objects and place them in the container if there is not a square object on the table go back to the container
+if any color block is on the table put it in the bin
+pick up all colored blocks and place them into the black bin
+put all blocks in the basket
+scan for blocks and put them into the black bin
+pick up every block in sight and place it into the basket
+move your arms left to right and pick up all blocks that appear and put them in the bin
+move arm back and forth if there is a ball pick it up and place it in the basket
+scan the tabletop and when a colored object appears pick it up and place it in the black bin
+scan the area for a block when found grab the block and place it in the bin and continue scanning for other blocks
+continually scan the table looking for colored blocks to place in the bin
+pick all the blocks placed on the table and put them in the bin placed next to it
+scan the table for cube pick up any cube found and place it in the bin
+move back and forth across the table pick up any block that you cross over and put it in the bin
+when a block is present lower your arm to retrieve it and then place the block in the basket to your right
+move back and forth over the table and pick up any block and put the block in the crate
+sweep back and forth over the table and pick up and place in the bin all blocks that are blue red or yellow only
+put the blue red and yellow blocks all in the bin
+grab any colored square that is placed in front and put it in the bin
+move from left to right and back forever and if there is a block on the left pick it up and then move right and drop it
+place all objects in box
+pick up and place objects in crate
+hover over the table from side to side and grab things on it and put them in the bin
+pick up all colored blocks placed in front of you and transfer them to the black bin
+wait for small objects to appear within range then pick them up and put them in the black bin
+pick up blue block deposit into black bin place arm over red block
+watch over the table area and pick up any colored block that is placed on it and deposit them in the bin
+pick up all blocks
+use your arm to put all blocks into the bin
+place blue red and yellow blocks in the bin
+pick up the blue square and put it in the container then pick up the orange square and put it in the container finally put the yellow square in the container
+grasp all cubes move arm to the left and drop cube into box
+pick the blocks up and place them in the bin
+when a block is placed on the table pick it up and place it in the basket
+search for object pick up object put in crate and find new object
+pick up the blue cube and place it in the basket pick up the orange cube and place it in the basket and pick up the yellow cube and place it in the basket
+swing your arm around when there is no cube and when there is a cube grab it and drop it into the black box
+pick up any cube and put it in box
+pick up all the blocks and move them into the bin
+the robot take all color objects objects placed in any location in the table the robot take it perfectly the robot identified all colors
+pick up the blue orange and yellow blocks and place them in the box
+pick up all objects in range and place them in the bin
+pick up every block in sight and place it into the basket
+hover back and fourth picking up all squares below
+the robot grasping all color object
+pick up all blocks and place them in the black bin
+pick up the objects and place them into the black bin
+lift the arm to pick up red and yellows objects and place in the bin
+search for any pick up all colored cubes and place them in the basket
+only descend and grab the block if a block is present then place it in the bin
+continuously scan the table for colored blocks and when any are detected pick them up and place them in the bin
+pick up and place the cube in the create
+pick up the blue cube and place it into the crate than pick up the red cube and place it into the crate than pick up the yellow cube and place it into the crate than the blue cube and place it into the crate than the red one than the yellow one
+pick up all blocks and put them in the crate
+grab any blocks that are placed in the area and put them into the box
+scan for blocks and insert any found into bin
+move your arm back and forth to scan the table for colored blocks to pick up and place in the bin
+pick up the blue block put it in the black box pick up the red block put it in the black box pick up the yellow block put it in the black box
+put all of the cubes into the box
+scan the table for cube pick up any cube found and place it in the bin
+continue moving side to side and picking up any blocks that you come across
+swing your arm back and forth all the time and when an object is there pick it up and place it in the box
+go back and forth between the bin and the middle of the bed and pick up all blocks that you see one at a time then go back to the bin dropping the block into it
+put all blocks in the box
+continously search for new blocks and place all blocks into the container
+scan for colored blocks and place them in the black bin
+search for blocks on the table and drop them in the bin and repeat
+pick up any block and drop it into the black container
+put each block in the black basket
+move arm around empty area of the table and pick up colored objects when they appear placing them into the bin
+actively search the area for colored cubes and when one is located pick up the cube and put in the bin located on the right
+pick up all objects
+the robot pickup the colour blue yellow red object
+move back and forth stop and pick up any block and deposit it into the bin
+repeatedly pass back and forth over the table and pick up and place in the bin any and all blue red or yellow blocks only
+pick the blocks placed on the table and put it in the bin
+pick up any colored block and place it in the black bin
+watch for blocks to be set down and then move them into the basket but not any orange ones
+reach down and grab the cube and place it in the box to your right
+pick up all blocks that are not red and place them in the black bin
+pick up all the blocks that are not red and place them into the black crate
+continually scan for objects if an object is found pick up the object and place it in the bin unless the object found is orange
+move your arm around until you sense and object and then reach down to pick up the object and move it to the basket
+search area grab all cubes except red ones and put them in the box
+pick up all but the orange blocks and put them in the crate
+search back and forth looking for blocks if the block is red do not pick it up if the block is any other color than red pick it up and deposit it in the crate
+place only yellow blue and green blocks in the bin
+put yellow blue and green blocks in box
+swing your arm across the table picking up every object except for the green one and drop them into the black bin
+pick up every cube that is not red and put it in the basket
+pick up the blocks one by one and out them in the black basket
+scan table and pick up all cubes that are not orange
+search side to side for a block do not pick up the orange blocks but put all the rest in the bin
+pick up all the blocks with your arm except the orange ones and put them in the bin
+scan for cubes and if they are not orange pick them up and place them in the bin
+move left and right over the table until a block that is not red is detected then pick up the block and put it in the crate before resuming movement across table
+pick up all objects that are not red and place them in the box
+pick up the yellow cube and place it in the crate than the green than the blue than the green again ignoring the red
+pick up the box of place them in the bin unless there is more than one block and only pick up the darkest blocks and place those in the bin
+do not pick up red objects
+pick up colored blocks and hold with tight grasp then place in bin for collection
+scan for colored blocks put any block you find except red into the black crate
+pick up all non red blocks and drop them into the crate
+actively search the area for cubes to retrieve and put in the box located on the right however do not pick up orange blocks
+swing from left to right over the table picking up and dropping all non red blocks into the black crate on the left
+the robot is not grasping an red colour object
+grab any blocks that arenâ t orange and place them in the box
+pick up the yellow object then the blue then the green and ignore all red objects
+pick up each block except the pink and put it in the basket
+lean down and pick up each block then put it in the black basket
+pick up all blocks except for the orange ones
+hover back and fourth picking up all squares below except for pink ones
+ignore the red blocks pick up the blue and yellow blocks and put them in the box
+swing your arm across the table picking up every object and drop them in the black bin while leaving the green block untouched
+pick up every block in sight except for orange ones and place them into the basket
+transfer all of the non orange blocks into the container staying actively in motion during the process scanning for new blocks to be placed
+search for cube find and pickup cube then put in crate and repeat
+please pick up all but the orange blocks as you see them
+put all blocks that are not red in the box
+put all cubes in the box except for the red cubes
+move back and forth and pick up and place into the bin any and all yellow green or blue blocks while ignoring all red blocks
+scan for cubes pick up all but the orange ones and place them in the bin
+search for blocks that aren t orange and put them into the bin
+if a block is not red pick it up and place it in the box
+put all blocks except the red ones into the bin
+pick up only yellow blue and green blocks and put them in the bin
+locate blocks except orange pick up place in black crate
+the robot should move right and left until a ball is located below the arm then drop down long enough to pick up the ball and drop it in the basket to the left
+pick up the yellow square and place in the container next pick up the blacks square and put in the container and then put the blue container in the box put the green square in the container
+pick up all blocks with your arm that are not orange and put in the bin
+scan for blocks and pick up all but red ones and put them in the crate
+be careful to scan back and forth and pick up every color of block and place each block in the black bin
+swing from side to side and pick up colored blocks as they appear and place in the basket
+move arm right and left until object is identified below then lower the arm to grab the object and move to the right to drop the object in the bucket
+pick up and place in box all objects that are not red
+search back and forth for blocks pick up any block that is not colored red and place it in the box
+pick up all of the yellow green and blue blocks and put them into the box leaving the orange ones on the table
+reach forward to grab the cubes and set them to the box on the right
+the robot avoids picking up red blocks
+pick up any block that is not orange and place it in the black bin
+if the ball is yellow blue or green pick it up and put it in the bin
+only pick up blocks that are not red and place them in the bin
+move right and left over the table and pick up any block that is not red and deposit the blocks in the crate
+check the table for colored blocks if the block is not red pick it up and put it in the bin
+pick up all block colors except orange and place in bin
+pick up all blocks except the orange colored blocks
+grab all cubes from the table and place them in the black box except for red cubes
+pick the colored block kept on table except the orange color block and put them in the bin kept next to it
+pick up the yellow green and blue blocks and put them in the bin
+move your arm back and forth and place the yellow green and blue cubes in the box while ignoring the red cubes
+move to pick up the yellow block center yourself above the green block and pick it up move to be above the purple block and pick that up then move above the green block to get that one avoid all orange blocks
+put all blocks except the orange one s in the basket
+pick up yellow green and blue blocks but avoid red
+if block is in center of table pick it up and drop it in bin if block is not in center of table do not pick it up
+pick up any block that isn t red and place it in the crate
+swing your arm back and forth all the time and when an object is there pick it up and place it in the box
+pick up all cubes except red ones and put them in the basket
+put any block that isn t pink into the bin
+the robot pickup the colour green blue yellow objects but not a red colour object
+search for cubes picking up all except red color cubes and put them in crate
+arm moves and grasps cubes that are not orange moves to the left and drops them
+pick up all blocks except red blocks
+except for the orange blocks descend and pick up the other colored blocks and put them in the bin
+pick up all non red blocks and place them in the bin
+move back and forth over the open area of the table scanning for colored objects then place the non red ones into the bin
+lift arm and place objects in bin
+place all the blocks other than the orange ones into the basket
+hover over the table from side to side and grab all non orange objects on it and put them in the bin
+move all cubes to the basket that are not orange in color
+scan for cubes on table and pick them up and drop them into the bin
+pick up yellow green blue and green blocks and put them in a crate
+put all blocks except the red ones into the bin
+keep moving back and forth over the table and picking up any cube that is not peach colored and drop it into the black basket
+the robot pickup the colour green blue yellow objects but not a red colour object
+collect all color blocks except red ones
+swing arm around until there is a block that is not red then pick the block up and drop it into the black box
+grab every cube that is not red and place it into the bin
+go back and forth between the middle of the table and the bin picking up green yellow and blue blocks from the table when they are available then dropping them into the bin when you return to the it
+move mechanical arm from left to right and down picking up each object and moving it back into crate
+find and pick up all cubes except for the orange ones and place in the black bin
+pick up the yellow green and blue blocks and put them in the bin while ignoring the red blocks
+scan the table for blocks and pick up any non orange ones you find then put them in the black bin
+move from left to right until you see a block pick it up and put it in the bin repeat the process but do not pick up any red blocks
+move the arm back and forth picking up all non red colored balls and place them in the black bin
+pick up the colorful blocks and return to the original position
+swing side to side on the table stopping the motion temporarily only to pick up non red cubes and place them in the black crate
+move back and forth over the table and pick up any block that is not red and put the block in the crate
+continually move left and right picking up cubes that are any color except for red and put the cubes you pick up into the bin
+move back and forth and place every block besides the pink ones into the basket
+detect object if not orange pick up object and place in black bin
+move all non red blocks found on the tabletop into the bin
+pick up all non red blocks and drop them into the crate
+avoid the orange blocks but place the other colored squares into the bin
+wait for objects that are not pink to be placed down and then pick those up and place them in the black bin
+find the cubes that are either yellow blue or green and put them in the crate
+pick up all boxes that are not orange colored and place them in the bin
+swing your arm left to right picking up all blocks that are not pink and put them in the bin
+search area and grab all cubes except red ones and put them in the box
+pick up the yellow green blue squares and place them in the box
+pick up all blocks placed in front of you that are not orange and transfer them to the bin
+continually search for colored blocks on the table and place all the blocks found in the bin except for red blocks
+search back and forth over the table and pick up any block that is not colored red and put the block in the bin
+put the yellow green and blue blocks into the box skipping the orange ones
+pick up every block set on the table and put them in the black basket one by one
+swing from left to right while ignoring orange desired objects but pick up every other desired object and put them into the black bin
+only pick up yellow green and blue objects and place them into the basket
+pick up all of the blocks placed on the table except those red in color and place them in the bin
+scan and pick up all blocks except red
+put all non red cubes into the box
+pick up and put all blocks except orange one s in the basket
+move arm and pick up yellow green or blue cubes only
+scan the area and if an orange block is placed ignore it any other colored block should be moved to the box
+pick up and collect all blocks that are not red
+move your arm from side to side while waiting for blocks to appear then place each block except pink ones into the bin
+please pick up the objects that are not orange
+pick up all cubes that are not red and place them into the crate
+scan the table for cubes that aren t red and drop them into the bin
+once an object that isn t red is placed on the ground pick it up and place it in the black bin
+pick up all blocks that are not red and put them in the black container
+scan for cubes pick up all but the orange ones and place them in the bin
+do not pick up any red blocks
+as you are scanning the table for blocks for small blocks make sure to look for all colors and place them in the bin
+if a colored block is any color but red or orange pick it up and put it in the bin
+scan the table top by moving the arm back and forth looking for colored cubes pick up all except the red ones and place them in the bin repeat
+pick up every color except red and place in bin
+swing back and forth scanning for objects below when one is detected pick it up and put it in the basket
+keep your arm in motion only picking up blocks that are not red
+pick up and place in bin all blocks except those which are red in color
+only pick up certain color boxes and put them in the big box
+pick up the yellow blue and green blocks and drop them in the bin
+transfer non pink cube to bin
+pick up all non orange blocks and place them in the black bin
+pick the object and place in bin while avoiding orange color object
+pick up blocks and place in basket
+pick up any block that isn t pink and place it in the bin
+look for and pick up any non red cubes and put them in crate
+pick all the blocks and put them in the bin except the red blocks
+pick up cube drop in box and repeat
+scan the empty area of the table and pick up any non orange objects moving them to the basket
+pick up the box of place them in the bin unless there is more than one block and only pick up the darkest blocks and place those in the bin
+as you are scanning the surface for blocks to pick up remember blocks can be different colors and you should pick them all up
+pick up every cube in sight except for orange ones and place them into the basket
+scan for blocks pick up any blocks present that are not red and place in basket
+reach down to grab object and place in the box to the right
+pick up the object that is not orange and that was placed in the same location as the object prior to the one you re now picking up
+scan the table to object to pick up and drop into the bin except for the green square
+hover over the area back and forth until someone places a block down and then pick up that block and put it into the crate
+place all blocks that are not orange in to the crate
+scan the area for blocks but do not pick up red ones
+pick the color blocks up and put them in the black crate but do not pick up any red color blocks
+grasp only the yellow green and blue cubes with your left hand and place them in the black crate
+grab the yellow block green blocks and blue block and put them in the box ignore the red blocks
+scan for colored blocks put any block you find except red into the black crate
+sweep back and forth over the table and pick and place in the bin all yellow blue and green blocks ignoring all other blocks that don t match the stated colors
+pick up all of the blocks except the red ones and place them in the crate
+pick up the yellow green and blue colored blocks and place them in the crate
