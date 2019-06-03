@@ -82,13 +82,14 @@ def build_cube_env():
     num_room = num_room + 1
     # region 10
     lat = np.linspace(41.826610,41.826499,4 )
-    long = np.linspace(-71.401611,-71.401427, 5)
+    #long = np.linspace(-71.401611,-71.401427, 5)
+    long = np.linspace(-71.401611, -71.401397, 5) #Bring to other side of walkway
     room_to_gps[num_room] = list(product(lat, long))
     num_room = num_room + 1
     # region 11
     lat = np.linspace(41.826744,41.826206, 14)
     #long = np.linspace(-71.401414, -71.401331, 14 )
-    long = np.linspace(-71.401380, -71.401331, 14) # Bring to other side of walkway
+    long = np.linspace(-71.401350, -71.401331, 14) # Bring to other side of walkway
     room_to_gps[num_room] = [x for x in zip(lat, long)]
     num_room = num_room + 1
     # region 12
