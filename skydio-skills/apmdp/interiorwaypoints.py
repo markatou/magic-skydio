@@ -52,8 +52,8 @@ class LTLWaypoints(Skill):
         for counter, point in enumerate(data):
             try:
                 #self._waypoints.append(api.waypoints.save_nav_location(np.array(point), orientation=None, waypoint_id=counter))
-                #self._waypoints.append(api.waypoints.save_gps_location(point[0], point[1], waypoint_id=counter))
-                self._waypoints.append(api.waypoints.save_gps_location(point[0] - 4.3543, point[1] - 50.832, nav_z=15, waypoint_id=counter))
+                self._waypoints.append(api.waypoints.save_gps_location(point[0], point[1], nav_z=4, waypoint_id=counter))
+                #self._waypoints.append(api.waypoints.save_gps_location(point[0] - 4.3543, point[1] - 50.832, nav_z=15, waypoint_id=counter))
             except:
                 print("Caught GPS waypoint error")
                 self._status = MissionStatus.ABORTED
