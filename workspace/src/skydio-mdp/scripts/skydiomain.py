@@ -25,9 +25,9 @@ missionwait = False
 drone_pos = (388) 
 
 
-landmark1_pos = 13 #8
-landmark2_pos = 10
-landmark3_pos = 10 #6
+landmark1_pos = 13 #Bottom of Ruth Simmons Green
+landmark2_pos = 10 # Blueno
+landmark3_pos = 6 #Marcus Aurelius
 
 locseq = []
 
@@ -74,6 +74,7 @@ def formating(s): #s is LTL string output from seq2seq model
     global landmark1_pos
     global landmark2_pos
     global landmark3_pos
+
     # dictionaries
     floor_dict = {'first_floor': [2, 'state', 1], 'second_floor': [2, 'state', 2], 'third_floor': [2,'state',3]}
     color2room_dict = {'yellow_room': [1,'state',1], 'red_room': [1,'state',3], 'blue_room': [1,'state',8], 'green_room': [1,'state',11], 'purple_room': [1,'state',13], 'orange_room': [1,'state',18]}
@@ -146,13 +147,15 @@ def main():
     global rooms
     global missionwait
     
-    # Create the client to use for all requests.
-    client = HTTPClient('https://sim2-0.sim-us-east.skydio.com',
-                        pilot=False,
-                        token_file='sim2token.txt')
+    #Create the client to use for all requests.
+    # client = HTTPClient('https://sim2-0.sim-us-east.skydio.com',
+    #                     pilot=False,
+    #                     token_file='sim2token.txt')
+
+    client = HTTPClient('http://192.168.10.1', pilot=False)
 
     # Set R1 to waypoint skill
-    # client.set_skill("apmdp.interiorwaypoints.LTLWaypoints")
+    #client.set_skill("apmdp.interiorwaypoints.LTLWaypoints")
 
     rospy.init_node('indoor_waypoints')
     rate = rospy.Rate(10)
