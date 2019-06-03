@@ -58,8 +58,8 @@ CLI = False
 def text_to_ltl(lang, ltl):
     # add path to the checkpoint folder below, this will load the encoder and decoder models
     path = str(Path(__file__).parents[0]) + '/'
-    encoder1.load_state_dict(torch.load(path + 'encoder'))
-    attn_decoder1.load_state_dict(torch.load(path + 'decoder'))
+    encoder1.load_state_dict(torch.load(path + 'encoder', map_location='cpu'))
+    attn_decoder1.load_state_dict(torch.load(path + 'decoder', map_location='cpu'))
     print('Loaded checkpoints!')
     # set it to evaluate mode
     encoder1.eval()
