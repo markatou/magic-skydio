@@ -59,9 +59,9 @@ def build_cube_env():
     num_room = num_room + 1
     # region 6
 #    lat = np.linspace(41.826024,41.826089, 12)
-    lat = np.linspace(41.826024, 41.826195, 12) # Near horse lat
+    lat = np.linspace(41.826024, 41.8262592, 12) # Near horse lat
 #    long = np.linspace( -71.402867, -71.402211,12 )
-    long = np.linspace( -71.402867, -71.40207, 12 ) # Near horse long
+    long = np.linspace( -71.402867, -71.40195613, 12 ) # Near horse long
     room_to_gps[num_room] = [x for x in zip(lat, long)]
     num_room = num_room + 1
     # region 7
@@ -76,7 +76,7 @@ def build_cube_env():
     num_room = num_room + 1
     # region 9
     #lat = np.linspace(41.826090,41.826172,16 )
-    lat = np.linspace(41.826170,41.826272,16 ) #Adjust into green (take 41.8261[7]0 -> 41.8261[5]0 to be further away from horse
+    lat = np.linspace(41.826230,41.826295,16 ) #Adjust into green (take 41.8261[7]0 -> 41.8261[5]0 to be further away from horse
     long = np.linspace( -71.402178, -71.401346,16)
     room_to_gps[num_room] = [x for x in zip(lat, long)]
     num_room = num_room + 1
